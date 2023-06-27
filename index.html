@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.waves.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Metavision</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:wght@300;400;500;600;700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:200, 200italic, 400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/accordion.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar fixed-top navbar-expand-lg" id="mainNav">
+            <div class="container nav-head px-4">
+                <a class="navbar-brand" href="#page-top"><img src="assets/Metavision.svg"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <section id="intro" class="wrapper style1 fullscreen fade-up h-100">
+                    <div id="overlay">
+                    </div>
+                    <div class="container inner px-4">
+                        <div style="padding-top: 40vh;">
+                            <div class="col-lg-9 align-self-end">
+                                <h1 class="hero-text text-green font-weight-bold" id="elementEl" style="font-weight: 700;">We automate 3D production workflow as the infrastructure for the future industrial metaverse.</h1>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </header>
+        <script>
+        const effect = VANTA.WAVES({
+          el: "#intro",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 800.0,
+          minWidth: 400.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          waveHeight: 20.0,
+          color: 0x4A46FF,
+          waveSpeed: 0.5,
+        });
+        //horizon scrollbar fix... sort of.
+        window.onload = function () {
+          window.dispatchEvent(new Event("resize"));
+        };
+        </script>
+
+        <!-- About-->
+        <section class="page-section bg-violet" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <!-- <hr class="divider divider-light" /> -->
+                        <p class="text-white-75 mb-4">Strategic Partners</p>
+                        <br>
+                        <div class="row partners">
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/unity.png">
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/xr.png">
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/caa.png">
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/semidrive.png">
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/metax.png">
+                            </div>
+                            <div class="col-lg-2 col-md-4">
+                                <img src="assets/img/mihoyo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="bg-violet" id="platform">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6" style="padding-top: 100px">
+                        <h2 class="text-green">Building a powerful platform that standardizes the generation of 3D objects.</h2>
+                        <p class="text-green">For the same requirement/non-requirement ticket, if it has a new PTR ticket, it will follow the new status flow  - edge case, which normally happens when a non-requirement ticket links with a requirement ticket during reviewing (jump from non-requirement tab/section to requirement tab/section, and follow the new status flow)</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/img/platform.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4A46FF" fill-opacity="1" d="M0,0L860,288L1440,68L1440,0L720,0L0,0Z"></path></svg>
+
+
+        <section id="scenario">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6">
+                        <img src="assets/img/scenario.png">
+                    </div>
+                    <div class="col-lg-6 scenario-text">
+                        <div class="scenario-line" style="height: 150px;"></div>
+                        <h2 class="text-violet">The evolution of 3D technologies make it possible to natural human computer interaction.</h2>
+                        <div class="scenario-line" style="height: 500px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Industries-->
+        <div class="site-outer">
+            <div class="site-inner">
+            <section class="container-fluid">
+            <!-- ACCORDION ROW -->
+            <div class="row">
+                    <ul class="accordion-group" id="accordion">
+                        <li class="out" style="background-image: url('assets/img/automobile.jpg');">
+                            <div class="accordion-overlay"></div>
+                            <h4>Automobile</h4>
+                            <section class="hidden-xs">
+                                <article>
+                                    <p>Automobile industry will need a lot of 3D technologies in the in-vehicle system to enable user to interact with the car and the environment.</p>
+                                </article>
+                            </section>
+                        </li>
+                        <li style="background-image: url('assets/img/transportation.jpg');">
+                            <div class="accordion-overlay"></div>
+                            <h4>Warehouse & Logistics</h4>
+                            <section class="hidden-xs">
+                                <article>
+                                    <p>International logistics is undergoing a deep digitalization. In the future we will see more virtual reality for monitoring the transportation.</p>
+                                </article>
+                            </section>
+                        </li>
+                        <li style="background-image: url('assets/img/culture.jpg');">
+                            <div class="accordion-overlay"></div>
+                            <h4>Culture & Tourist</h4>
+                            <section class="hidden-xs">
+                                <article>
+                                    <p>The latest VR/AR technologies will bring more fun for both onsite and virtual tourist.</p>
+                                </article>
+                            </section>
+                        </li>
+                        <li style="background-image: url('assets/img/manufacturing.jpg');">
+                            <div class="accordion-overlay"></div>
+                            <h4>Manufacture</h4>
+                            <section class="hidden-xs">
+                                <article>
+                                    <p>The digital twin in the manufacturing sector will increasingly enhance the efficiency of research and deployment.</p>
+                                </article>
+                            </section>
+                        </li>
+                        <li style="background-image: url('assets/img/energy.jpg');">
+                            <div class="accordion-overlay"></div>
+                            <h4>Energy</h4>
+                            <section class="hidden-/xs">
+                                <article>
+                                    <p>Energy is mostly invisible. But with the 3D technologies, we can visualize the energy flow to give user more intuitive experience. </p>
+                                </article>
+                            </section>
+                        </li>
+                    </ul>
+            </div>
+
+        <!-- Call to action-->
+        <section style="padding-bottom: 200px;">
+            <div class="ticker-wrap">
+              <div class="ticker">
+                <span class="item-collection-1">
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                </span>
+                <span class="item-collection-2">
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                  <span class="item">Let's build the future together ➜</span>
+                </span>
+              </div>
+            <div>
+            <div class="contact container px-4 px-lg-5 text-center">
+                <a class="btn btn-xl" href="https://startbootstrap.com/theme/creative/">Contact Metavision</a>
+            </div>
+        </section>
+        <!-- Stories-->
+        <section class="page-section" style="position: relative;">
+            <p id="stories-title">Stories</p>
+            <div class="article">
+                <div class="container" style="overflow-x: display">
+                    <div class="article-box">
+                        <img src="assets/img/article01.png">
+                        <h3>Lorem ipsum dolor sit map demer.</h3>
+                        <p>2023-07-01</p>
+                    </div>
+                    <div class="article-box">
+                        <img src="assets/img/article02.png">
+                        <h3>Lorem ipsum dolor sit map demer.</h3>
+                        <p>2023-06-25</p>
+                    </div>
+                    <div class="article-box">
+                        <img src="assets/img/article03.png">
+                        <h3>Lorem ipsum dolor sit map demer.</h3>
+                        <p>2023-06-22</p>
+                    </div>
+                    <div class="article-box">
+                        <img src="assets/img/article04.png">
+                        <h3>Lorem ipsum dolor sit map demer.</h3>
+                        <p>2023-06-22</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <img src="assets/img/footer.png" style="width: 100%; margin-top: 50px;">
+        <div class="bg-violet">
+            <div class="container">
+                <div class="footer-top px-4 row">
+                    <div class="col-lg-6">
+                        <img src="assets/Metavision-white.svg">
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-muted">Website</p>
+                        <a href="#">Home</a><br>
+                        <a href="#">Articles</a><br>
+                        <a href="#">About</a><br>
+                        <a href="#">Careers</a>
+                    </div>
+                        <div class="col-lg-2">
+                        <p class="text-muted">Partners</p>
+                        <a href="#">Unity</a><br>
+                        <a href="#">Chinese Academy of Arts</a><br>
+                        <a href="#">SemiDrive</a><br>
+                        <a href="#">Metax</a><br>
+                        <a href="#">GravityXR</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="text-muted">Industries</p>
+                        <a href="#">Automobile</a><br>
+                        <a href="#">Manufacturing</a><br>
+                        <a href="#">Culture & Tourist</a><br>
+                        <a href="#">Energy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-violet py-5">
+            <div class="container"><div class="small text-muted">Copyright &copy; 2023 - Metavision Ltd, Co</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
