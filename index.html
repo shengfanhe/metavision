@@ -33,11 +33,11 @@
         <nav class="navbar fixed-top navbar-expand-lg" id="mainNav">
             <div class="container nav-head px-4">
                 <a class="navbar-brand" href="#page-top"><img src="assets/Metavision.svg"></a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
-                        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
-                    </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -98,7 +98,7 @@
                                 <a href="https://www.metax-tech.com/"><img src="assets/img/metax.png"></a>
                             </div>
                             <div class="col-lg-2 col-md-4">
-                                <a href="https://www.mihoyo.com/"><img src="assets/img/mihoyo.png"></a>
+                                <a href="http://www.hzrunzhou.com/index.html"><img src="assets/img/runzhou.png"></a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                     <div class="col-lg-6" style="padding-top: 120px">
                         <h2 class="text-green">A powerful platform that standardize and streamline the generation of virtual environments and objects.</h2>
                         <br>
-                        <p class="text-green">We are building a unique content management system that specifically for 3D creation workflow. It starts from the foundamental 3D models, and use game engine to attach physical attributes. They will be applied to different scenarios based on the industries and connect to the data sources. The components can interact with eachother to become a metaverse.</p>
+                        <p class="text-green" style="font-family: open sans;">We are building a unique content management system that specifically for 3D creation workflow. It starts from the foundamental 3D models, and use game engine to attach physical attributes. They will be applied to different scenarios based on the industries and connect to the data sources. The components can interact with eachother to become a metaverse.</p>
                     </div>
                     <div class="col-lg-6">
                         <img src="assets/img/platform.png">
@@ -211,29 +211,53 @@
         <!-- Stories-->
         <section class="page-section" style="position: relative; margin-top: 100px;">
             <p id="stories-title">Stories</p>
-            <div class="article">
-                <div class="container" style="overflow-x: display">
-                    <div class="article-box">
-                        <img src="assets/img/article01.png">
-                        <h3>Lorem ipsum dolor sit map demer.</h3>
-                        <p>2023-07-01</p>
-                    </div>
-                    <div class="article-box">
-                        <img src="assets/img/article02.png">
-                        <h3>Lorem ipsum dolor sit map demer.</h3>
-                        <p>2023-06-25</p>
-                    </div>
-                    <div class="article-box">
-                        <img src="assets/img/article03.png">
-                        <h3>Lorem ipsum dolor sit map demer.</h3>
-                        <p>2023-06-22</p>
-                    </div>
-                    <div class="article-box">
-                        <img src="assets/img/article04.png">
-                        <h3>Lorem ipsum dolor sit map demer.</h3>
-                        <p>2023-06-22</p>
+            <div class="carousel container px-4" data-bs-ride="carousel">
+              <div class="carousel__nav">
+               <span id="moveLeft" class="carousel__arrow">
+                    <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                    </svg>
+                </span>
+                <span id="moveRight" class="carousel__arrow" >
+                    <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                    </svg>    
+                </span>
+              </div>
+              <div class="carousel-item carousel-item--1" data-bs-interval="8000">
+                <div class="carousel-item__image"><img src="assets/img/article01.png"></div>
+                <div class="carousel-item__info">
+                  <div class="carousel-item__container">
+                  <h2 class="carousel-item__subtitle">2023.06.18 </h2>
+                  <h1 class="carousel-item__title">Riccitiello doubles down on Unity's AI plans.</h1>
+                  <p class="carousel-item__description">CEO says "most" of engine firm's AI tools will be trained on internal art or licensed from third parties. Unity has announced it will offer two generative AI tools to developers later this year: Muse...</p>
+                  <button class="btn btn-sm carousel-item__btn">Read the article</button>
                     </div>
                 </div>
+              </div>
+              <div class="carousel-item carousel-item--2" data-bs-interval="8000">
+                <div class="carousel-item__image"><img src="assets/img/article02.png"></div>
+                <div class="carousel-item__info">
+                  <div class="carousel-item__container">
+                  <h2 class="carousel-item__subtitle">2023.06.15</h2>
+                  <h1 class="carousel-item__title">Unity Announces Second Quarter 2023 Financial Results Webcast.</h1>
+                  <p class="carousel-item__description">Unity Unleashes the Power of AI for Creators, Supercharging Content Creation and User Engagement.</p>
+                  <button class="btn btn-sm carousel-item__btn">Read the article</button>
+                    </div>
+                </div>
+              </div>
+                <div class="carousel-item carousel-item--3" data-bs-interval="8000">
+                <div class="carousel-item__image"><img src="assets/img/article03.png"></div>
+                <div class="carousel-item__info">
+                  <div class="carousel-item__container">
+                  <h2 class="carousel-item__subtitle">2023.06.10</h2>
+                  <h1 class="carousel-item__title">Metavision has a new office at the waterfront Hangzhou.</h1>
+                  <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  <button class="btn btn-sm carousel-item__btn">Read the article</button>
+                    </div>
+                </div>
+              </div>
+              
             </div>
         </section>
 
