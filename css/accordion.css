@@ -258,6 +258,7 @@
 	 color: #fff;
 	 font-size: 14px;
 	 letter-spacing: 0.15rem;
+	 font-family: open sans;
 }
  .accordion-group li section article p:before, .accordion-group li section article p:after {
 	 content: "";
